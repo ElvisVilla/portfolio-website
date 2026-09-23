@@ -59,33 +59,11 @@ header {
     from{transform: rotateZ(360deg);}
 }
 
-.logo{
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-wrap: nowrap;
-    transition: 0.16s ease-in-out;
-}
-
-.logo:hover{
-    transform: scale(1.05);
-}
-
-#menu-icon{
-    font-size: 2rem;
-    display: none;
-}
-
-/* section {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-} */
-
 .about {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .about .about-container {
@@ -109,8 +87,9 @@ header {
     justify-content: center;
     text-align: center;
     gap: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* padding: 2rem; */
     max-width: 800px;
 }
 
@@ -121,7 +100,9 @@ header {
 }
 
 .name {
-    font-size: 5.2rem;
+    font-size: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     color: linear-gradient(to right, rgb(0, 157, 255),
     rgb(255, 0, 255));
 }
@@ -164,10 +145,13 @@ a {
 
 .project-item{
     position: relative;
-    max-width: 450px;
-    max-height: 450px;
-    min-width: 450px;
-    min-height: 450px;
+    width: min(100%, 380px);
+    aspect-ratio: 1 / 1;
+    flex: 0 1 380px;
+    min-width: 0;
+    min-height: 0;
+    max-width: 380px;
+    max-height: none;
     background: black;
     border-radius: 1rem;
     overflow: hidden;
@@ -251,4 +235,66 @@ footer{
     color: white;
     background: rgb(38, 38, 38);
     font-weight: normal;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.project-item {
+    width: min(100%, 380px);
+    min-width: 0;
+    min-height: 380px;
+    flex: 1 1 380px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10rem 1rem 0;
+    }
+
+    .name {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        padding: 0;
+    }
+
+    .self-description {
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    .projects {
+        padding: 6rem 1rem 10rem;
+        gap: 1.5rem;
+    }
+
+    .project-item {
+        width: 100%;
+        max-width: none;
+        flex-basis: 100%;
+        aspect-ratio: 1 / 1;
+        min-height: 0;
+    }
+
+    .square {
+        left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding-top: 8rem;
+    }
+
+    .project-item {
+        min-height: 280px;
+        padding: 1.5rem;
+        aspect-ratio: 1 / 1;
+    }
+
+    .socials {
+        flex-wrap: wrap;
+    }
 }
