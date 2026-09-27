@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Elvis Villavicencio Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -65,6 +67,12 @@
 
     </header>
 
+    <div class="tab-menu">
+        <button class="tab-button">Projects</button>
+        <button class="tab-button">Art</button>
+        <button class="tab-button">Systems</button>
+    </div>
+
     <section class="projects">
         <div class="project-item">
             <img src="project-images/soul.png" alt="">
@@ -82,13 +90,16 @@
             </span>
         </div>
 
-        <div class="project-item">
-            <img src="project-images/thekindred.png" alt="">
-            <h3>The Kindred</h3>
-            <span>
-                Souls Ported from Unity to the Godot Engine | On development |
-            </span>
-        </div>
+        <a href="project-pages/The Kindred.html">
+            <div class="project-item">
+                <img src="project-images/thekindred.png" alt="">
+                <h3>The Kindred</h3>
+                <span>
+                    Souls Ported from Unity to the Godot Engine | On development |
+                </span>
+            </div>
+        </a>
+
 
         <div class="project-item">
             <img src="./project-images/cutebiproject.png" alt="">
@@ -146,8 +157,6 @@
         </div>
 
     </section>
-    
-    <script src="script.js"></script>
 
     <!-- <hr> -->
     <footer>
