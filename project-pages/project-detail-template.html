@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html>
-
-    <header>
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elvis Villavicencio</title>
-
-        <link rel="stylesheet" href="style.css"> Change a specific style for the projects page
-    </header>
+        <title>Project title | Elvis Villavicencio</title>
+        <link rel="stylesheet" href="../styles/project-detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    </head>
 
     <body>
-        <Section>
-            <h1>The Kindred</h1>
-            <div class="links-box">
+        <main class="project-detail">
+            <a class="back-link" href="../index.html">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                Back to projects
+            </a>
 
-            </div>
-            <p class="location"></p>
-            <img src="../project-images/thekindred.png" class="hero-image" alt="The Kindred">
+            <header class="project-header">
+                <p class="eyebrow">Project detail</p>
+                <h1>Project title</h1>
+                <p class="location">Location</p>
+                <div class="links-box" aria-label="Project links"></div>
+            </header>
 
-            <h4 class="responsability"></h4>
-            <p class="dates"></p>
-            <ul class="keypoints">
-                <li></li>
-            </ul>
+            <img src="../project-images/thekindred.png" class="hero-image" alt="Project preview">
 
-            <p class="project-description">
-
-            </p>
-
-            <div class="key-art-box">
-                <img src="" alt="">
+            <div class="project-meta">
+                <p class="dates">Dates</p>
+                <p class="job-title">Role</p>
             </div>
 
-        </Section>
+            <section class="project-content" aria-labelledby="project-overview">
+                <div class="content-heading">
+                    <p class="eyebrow">Overview</p>
+                    <h2 id="project-overview">Project overview</h2>
+                </div>
+
+                <div class="content-body">
+                    <p class="project-description">Project description.</p>
+                    <ul class="keypoints">
+                        <li>Key project contribution.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="key-art-box" aria-hidden="true"></div>
+        </main>
     </body>
-
 </html>

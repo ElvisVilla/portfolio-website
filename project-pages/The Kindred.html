@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html>
-
-    <header>
+<html lang="en">
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elvis Villavicencio</title>
-
-        <link rel="stylesheet" href="style.css"> Change a specific style for the projects page
-    </header>
+        <title>The Kindred | Elvis Villavicencio</title>
+        <link rel="stylesheet" href="../styles/project-detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <script src="../project-detail.js" defer></script>
+    </head>
 
     <body>
-        <Section>
-            <h1>The Kindred</h1>
-            <div class="links-box">
+        <main class="project-detail">
+            <a class="back-link" href="../index.html">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </a>
 
+            <header class="project-header">
+                <p class="eyebrow">2D Platformer Game | Godot Engine</p>
+                <h1>The Kindred</h1>
+                <!-- <p class="location">Berlin, Germany</p> -->
+                <div class="links-box" aria-label="Project links">
+                    <a href="https://elvisvilla.itch.io/soul-godot-engine" target="_blank">
+                        <i class="fa-solid fa-link" style="color: rgb(4, 135, 197);"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=K8CiSJU7XO8&t=2s" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: rgb(4, 135, 197);"></i>
+                    </a>
+                </div>
+            </header>
+
+            <img src="../art-galery/the-kindred-key-art/fountain.JPG" class="hero-image" alt="The Kindred pixel-art game scene">
+
+            <div class="project-meta">
+                <p class="dates">In development</p>
+                <p class="job-title">Game Developer / Technical Artist</p>
             </div>
-            <p class="location"></p>
-            <img src="../project-images/thekindred.png" class="hero-image" alt="The Kindred">
 
-            <h4 class="responsability"></h4>
-            <p class="dates"></p>
-            <ul class="keypoints">
-                <li> Developed gameplay systems: Player Mechanics, Enemy AI, Combat Systems, Save System, Level Transitions</li>
-                <li> Design and Animation of: Character, Enemies, Environment Art, Parallax Background and Tilemap</li>
-                <li> UI creation and Implementation: HUD, Inventory and Character Panel</li>
-                <li> Design atmosphere inmersion with strong enphasis on lighting, post processing effects, particles systems and sfx</li>
-                <li> Level design and Environment Art with strong enphasis on Platforming mechanics </li>
-            </ul>
+            <section class="project-content" aria-labelledby="project-overview">
+                <div class="content-heading">
+                    <p class="eyebrow">Overview</p>
+                    <h2 id="project-overview">Building a world through code and colors.</h2>
+                </div>
 
-            <p class="project-description">
+                <div class="content-body">
+                    <p class="project-description">
+                        The Kindred is a 2D game being ported from Unity to the Godot Engine, with a focus on expressive atmosphere, platforming, and systems-driven gameplay.
+                    </p>
 
-            </p>
-
-            <div class="key-art-box">
-                <img src="" alt="">
+                    <ul class="keypoints">
+                        <li>Developed gameplay systems: player mechanics, enemy AI, combat systems, save system, and level transitions.</li>
+                        <li>Designed and animated characters, enemies, environment art, parallax backgrounds, and tilemaps.</li>
+                        <li>Created and implemented the HUD, inventory, and character panel.</li>
+                        <li>Built atmosphere through lighting, post-processing effects, particle systems, and sound effects.</li>
+                        <li>Designed levels and environment art with an emphasis on platforming mechanics.</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <div class="key-art-box" aria-labelledby="key-art-heading">
+                <h2 id="key-art-heading">Key art</h2>
+                <div class="key-art-gallery">
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/firewood.png" alt="The Kindred firewood artwork">
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/luna.png" alt="The Kindred Luna character artwork">
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/casas.png" alt="The Kindred houses artwork">
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/demonic-tree-in-game.JPG" alt="The Kindred demonic tree in-game artwork">
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/fountain.JPG" alt="The Kindred fountain artwork">
+                    <!-- <img src="../art-galery/the-kindred-key-art/demonic-tree2.JPG" alt="The Kindred second demonic tree artwork"> -->
+                    <img class="dark-image" src="../art-galery/the-kindred-key-art/bridge.JPG" alt="The Kindred bridge artwork">
+                    <!-- <img src="../art-galery/the-kindred-key-art/demonic-tree-pixelart.PNG" alt="The Kindred demonic tree pixel art"> -->
+                    <!-- <img src="../art-galery/the-kindred-key-art/demonic-tree-sketch.PNG" alt="The Kindred demonic tree sketch"> -->
+                    <img src="../art-galery/the-kindred-key-art/plant-enemy.gif" alt="The Kindred plant enemy animation">
+                    <img src="../art-galery/the-kindred-key-art/lina.gif" alt="The Kindred Lina animation">
+                    <!-- <img src="../art-galery/the-kindred-key-art/props.png" alt="The Kindred props artwork"> -->
+                    <img src="../art-galery/the-kindred-key-art/trees.png" alt="The Kindred trees artwork">
+                </div>
             </div>
-
-        </Section>
+        </main>
     </body>
-
 </html>
