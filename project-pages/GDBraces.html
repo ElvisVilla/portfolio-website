@@ -30,22 +30,22 @@
             <section class="project-content" aria-labelledby="project-overview">
                 <div class="content-heading">
                     <p class="eyebrow">Overview</p>
-                    <h2 id="project-overview">Building a world through code and colors.</h2>
+                    <h2 id="project-overview">Experimenting with language design.</h2>
                 </div>
 
                 <div class="content-body">
                     <p class="project-description">
-                        Transpiled Programming Language implemented in GDScript following the book "Crafting Interpreters" from Robert Nystrom.
-                        This project is an exploration of how programming languages work, GDBraces completes the implementation of Tree Walk Interpreter + my own effort of implementing the Transpiler have GDBraces source code work directly to Godot
+                        Transpiled programming language implemented in GDScript following the book "Crafting Interpreters" by Robert Nystrom.
+                        This project is an exploration of how programming languages work. GDBraces completes the implementation of Tree Walk Interpreter and my own efforts of implementing the transpiler to have GDBraces source code work directly in Godot.
                     </p>
 
                     <ul class="keypoints">
-                        <li>Tokenizer: from the book and a few more tokens implemented by myself</li>
-                        <li>Parser: Ensures syntax correctness and reports errors messages. Its output is a Tree Tokens that represents the semantics of the program</li>
-                        <li>Resolver: analyzes the scope of variables on each block of code to ensure variables exist before execution</li>
-                        <li>Interpreter: Executes the instructions of the program</li>
-                        <li>Transpiler: Code generation to take GDBraces syntax into GDScript syntax that can be executed at runtime, this enables GDBraces as an scripting language for Godot Engine. Its implementation is still partial and more of an exploration than as a final usable solution</li>
-                        <li>Implemented Godot plugins: ResourceLoader, ResourcerSaver, ContextMenuPlugin and EditorInspectorPlugins for a more robust integration in the Engine</li>
+                        <li>Tokenizer: Following the book as well as implementing a few additional tokens by myself.</li>
+                        <li>Parser: Ensuring syntax correctness and reporting errors messages. Its output is a tree token that represents the semantics of the program.</li>
+                        <li>Resolver: Analyzing the scope of variables on each block of code to ensure variables exist before execution.</li>
+                        <li>Interpreter: Executing the instructions of the program.</li>
+                        <li>Transpiler: Code generation to take GDBraces syntax into GDScript syntax that can be executed at runtime. This enables GDBraces as an scripting language for Godot Engine. Its implementation is still partial and more of an exploration than a final usable solution.</li>
+                        <li>Implemented Godot plugins: ResourceLoader, ResourcerSaver, ContextMenuPlugin and EditorInspectorPlugins for a more robust integration into the Engine.</li>
                     </ul>
                 </div>
             </section>
