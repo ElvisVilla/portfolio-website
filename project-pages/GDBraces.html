@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GDBraces | Elvis Villavicencio</title>
+        <link rel="stylesheet" href="../styles/project-detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+        <script src="../project-detail.js" defer></script>
+    </head>
+
+    <body>
+        <main class="project-detail">
+            <a class="back-link" href="../index.html">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </a>
+
+            <header class="project-header">
+                <p class="eyebrow">Transpiled Programming Language | Godot Engine</p>
+                <h1>GDBraces</h1>
+            </header>
+
+            <img src="../project-images/gdbraces.png" class="hero-image" alt="Cutebit aplication image">
+
+            <div class="project-meta">
+                <p class="dates">Transpiles down to GDScript for runtime execution</p>
+                <p class="job-title">Programmer</p>
+            </div>
+
+            <section class="project-content" aria-labelledby="project-overview">
+                <div class="content-heading">
+                    <p class="eyebrow">Overview</p>
+                    <h2 id="project-overview">Building a world through code and colors.</h2>
+                </div>
+
+                <div class="content-body">
+                    <p class="project-description">
+                        Transpiled Programming Language implemented in GDScript following the book "Crafting Interpreters" from Robert Nystrom.
+                        This project is an exploration of how programming languages work, GDBraces completes the implementation of Tree Walk Interpreter + my own effort of implementing the Transpiler have GDBraces source code work directly to Godot
+                    </p>
+
+                    <ul class="keypoints">
+                        <li>Tokenizer: from the book and a few more tokens implemented by myself</li>
+                        <li>Parser: Ensures syntax correctness and reports errors messages. Its output is a Tree Tokens that represents the semantics of the program</li>
+                        <li>Resolver: analyzes the scope of variables on each block of code to ensure variables exist before execution</li>
+                        <li>Interpreter: Executes the instructions of the program</li>
+                        <li>Transpiler: Code generation to take GDBraces syntax into GDScript syntax that can be executed at runtime, this enables GDBraces as an scripting language for Godot Engine. Its implementation is still partial and more of an exploration than as a final usable solution</li>
+                        <li>Implemented Godot plugins: ResourceLoader, ResourcerSaver, ContextMenuPlugin and EditorInspectorPlugins for a more robust integration in the Engine</li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <div class="key-art-box" aria-labelledby="key-art-heading">
+                <h2 id="key-art-heading">Key art</h2>
+                <div class="key-art-gallery">
+                    <video controls aria-label="Cutebit gameplay video">
+                        <source src="../art-galery/GDBraces-key-art/Interpreter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
